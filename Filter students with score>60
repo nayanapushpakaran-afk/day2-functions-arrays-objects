@@ -1,0 +1,11 @@
+const students = [
+  { name: "Anu", score: 75 },
+  { name: "Rahul", score: 55 },
+  { name: "Meera", score: 90 },
+  { name: "Akhil", score: 60 },
+  { name: "Neha", score: 82 }
+];
+
+const passedStudents = students.filter(student => student.score > 60);
+
+console.log(passedStudents);
