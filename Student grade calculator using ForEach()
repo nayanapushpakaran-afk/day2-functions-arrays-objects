@@ -1,0 +1,22 @@
+const students = [
+  { name: "Anu", score: 92 },
+  { name: "Rahul", score: 78 },
+  { name: "Meera", score: 65 },
+  { name: "Akhil", score: 45 }
+];
+
+students.forEach(student => {
+  let grade;
+
+  if (student.score >= 90) {
+    grade = "A";
+  } else if (student.score >= 75) {
+    grade = "B";
+  } else if (student.score >= 60) {
+    grade = "C";
+  } else {
+    grade = "F";
+  }
+
+  console.log(`${student.name}: Score = ${student.score}, Grade = ${grade}`);
+});
